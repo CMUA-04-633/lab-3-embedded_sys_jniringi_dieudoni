@@ -76,7 +76,7 @@ Main code functionality
 
 Challenges:
 
-- debugging is a quite tough as there are no enough guidance in case of errors.
+- Debugging is quite tough as there are no enough guidance in case of errors.
 - Integrating various peripherals like ADCs, UART, and LCDs needs careful consideration of data formats, communication protocols etc.
 - Ensuring accurate readings from sensors may require calibration or different type of sensors to account for variations and environmental factors.
 
