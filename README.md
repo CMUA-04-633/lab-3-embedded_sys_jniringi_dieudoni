@@ -63,7 +63,7 @@ Main code functionality
 5. LED Control Function:
    - Function: LED_on_Flash
    - Purpose: Controls an LED based on light intensity.
-   - Working Principle: Toggles an LED when the light intensity exceeds a certain threshold. The LED is controlled based on a counter (`i`) to avoid immediate toggling.
+   - Working Principle: Toggles an LED when the light intensity exceeds a certain threshold. The LED is controlled based on a counter (i) to avoid immediate toggling.
 
 6. Error Handling:
    - Function: Error_Handler
