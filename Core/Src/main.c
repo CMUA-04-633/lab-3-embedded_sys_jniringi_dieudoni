@@ -90,13 +90,19 @@ void temp_value_to_Fahrenheit(uint16_t temper_value, char* convertedvalBuffer, s
 
 // Variable to count the number of times the condition is met
 int i = 0;
+int prev_light = 0;
 
 // Function to control the LED based on the light intensity
 void LED_on_Flash(int light) {
-    // Check if the light intensity is above a threshold (2000 in this case)
-    if (light > 2000) {
+
+	if (light > 2000) {
         // Increment the counter
-        i = i + 1;
+		if(prev_light < 2000){
+			  i = i + 1;
+			  prev_light=2001;
+		}
+
+
 
         // Check if the counter reaches 5
         if (i == 5) {
@@ -113,8 +119,11 @@ void LED_on_Flash(int light) {
                 i = 0;
             }
         }
+    }else{
+    	prev_light=0;
     }
 }
+
 
 
 int main(void)
